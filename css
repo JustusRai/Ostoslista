@@ -1,0 +1,39 @@
+/* (A) SHARED */
+#todo-wrap, #todo-wrap * {
+  font-family: arial, sans-serif;
+
+}
+#todo-wrap input, .todo-item {
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* (B) WRAPPER */
+#todo-wrap {
+  background: #aff8d4;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* (C) HEADER */
+#todo-wrap h1 { margin: 10px 0; }
+
+/* (D) ROW ITEMS */
+#todo-add, .todo-row {
+  display: flex;
+  align-items: center;
+}
+#todo-item, .todo-item {
+  flex-grow: 1;
+  background: #fff;
+}
+.todo-item.todo-ok { background: #566161; }
+#todo-save, .todo-del, .todo-done {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.todo-del { background: #000000; }
+#todo-save, .todo-done { background: #24e279; }
