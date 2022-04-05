@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Justuksen ostoslista
+    </title>
+    <link href="todo.css" rel="stylesheet">
+    <script defer src="todo.js"></script>
+  </head>
+  <body>
+    <div id="todo-wrap">
+      <h1>Justuksen</h1>
+
+      <!-- (A) ADD NEW ITEM -->
+      <form id="todo-add">
+        <input type="text" id="todo-item" placeholder="Muista ostaa myös vihanneksia!" required/>
+        <input type="submit" id="todo-save" value="Lisää"/>
+      </form>
+
+      <!-- (B) LIST ITEMS -->
+      <div id="todo-list"></div>
+
+      <!-- (C) ITEM TEMPLATE -->
+      <template id="todo-template">
+      <div class="todo-row">
+        <input type="button" class="todo-del" value="Poista"/>
+        <div class="todo-item"></div>
+        <input type="button" class="todo-done" value="Korissa"/>
+      </div>
+      </template>
+    </div>
+  </body>
+</html>
